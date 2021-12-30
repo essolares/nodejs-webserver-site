@@ -1,6 +1,6 @@
 {
   "name": "node-js-site",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "First NodeJS Site",
   "main": "app.js",
   "scripts": {
