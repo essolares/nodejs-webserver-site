@@ -47,6 +47,6 @@ app.get('/generic',  (req, res) => {
     });
 })
 
-app.listen(port, ()=>{
+app.listen(port || 5000, ()=>{
     console.log('Running on port:', port);
 });
