@@ -1,5 +1,6 @@
 const http = require('http');
-
+require('dotenv').config();
+const port = process.env.PORT;
 http.createServer((req,res)=>{
 
     //HTTP REQUEST TO GENERATE FILES
@@ -12,4 +13,4 @@ http.createServer((req,res)=>{
 
     res.end();
 })
-.listen( 8080 );
+.listen( port );
