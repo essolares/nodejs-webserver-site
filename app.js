@@ -2,7 +2,7 @@ const express = require('express')
 const hbs = require('hbs');
 require('dotenv').config();
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 5000;
 
 //HANDLEBARS
 app.set('view engine','hbs');
@@ -47,6 +47,6 @@ app.get('/generic',  (req, res) => {
     });
 })
 
-app.listen(port || 5000, ()=>{
+app.listen(port , ()=>{
     console.log('Running on port:', port);
 });
